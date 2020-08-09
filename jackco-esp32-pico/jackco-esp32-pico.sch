@@ -810,7 +810,7 @@ Wire Wire Line
 	6500 6900 6500 6750
 Connection ~ 6500 6750
 Text Notes 7400 7500 0    50   ~ 0
-Borscht-ESP32-Pico
+JackcoESP32-PICO Rev 1
 $Comp
 L Device:R_Small R6
 U 1 1 5F6B7817
@@ -1148,4 +1148,8 @@ Wire Wire Line
 Connection ~ 4550 6500
 Wire Wire Line
 	4550 6500 4550 6650
+Text Notes 10600 7650 0    50   ~ 0
+1
+Text Notes 8150 7650 0    50   ~ 0
+8 Aug 2020
 $EndSCHEMATC
