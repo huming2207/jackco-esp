@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name jackco-esp32-pico-rescue)(type Legacy)(uri ${KIPRJMOD}/jackco-esp32-pico-rescue.lib)(options "")(descr ""))
+)
