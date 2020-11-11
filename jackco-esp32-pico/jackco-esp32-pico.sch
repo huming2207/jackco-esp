@@ -262,17 +262,6 @@ Wire Wire Line
 	7200 2200 7200 2350
 Connection ~ 7300 2200
 $Comp
-L power:+3.3V #PWR0105
-U 1 1 5F2E8E41
-P 4700 800
-F 0 "#PWR0105" H 4700 650 50  0001 C CNN
-F 1 "+3.3V" H 4715 973 50  0000 C CNN
-F 2 "" H 4700 800 50  0001 C CNN
-F 3 "" H 4700 800 50  0001 C CNN
-	1    4700 800 
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R1
 U 1 1 5F2E9BE1
 P 4700 1050
@@ -482,7 +471,7 @@ Wire Wire Line
 	800  2450 800  2950
 Connection ~ 800  2950
 $Comp
-L Transistor_BJT:S8050 Q2
+L dk_Transistors-Bipolar-BJT-Single:MMSS8050-H-TP Q2
 U 1 1 5F35268D
 P 1650 1200
 F 0 "Q2" H 1840 1246 50  0000 L CNN
@@ -497,7 +486,7 @@ DTR
 Text GLabel 2650 1200 0    50   Input ~ 0
 RTS
 $Comp
-L Transistor_BJT:S8050 Q1
+L dk_Transistors-Bipolar-BJT-Single:MMSS8050-H-TP Q1
 U 1 1 5F35441F
 P 3600 1200
 F 0 "Q1" H 3790 1246 50  0000 L CNN
@@ -554,7 +543,7 @@ Wire Wire Line
 Wire Wire Line
 	1100 1200 950  1200
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J1
+L jackco-esp32-pico-rescue:USB_C_Receptacle_USB2.0-Connector J1
 U 1 1 5F3A031B
 P 1050 6300
 F 0 "J1" H 1157 7167 50  0000 C CNN
@@ -873,7 +862,7 @@ Wire Wire Line
 	8200 4350 8300 4350
 NoConn ~ 8200 3350
 $Comp
-L AN9520:AN9520 ANT1
+L jackco-esp32-pico-rescue:AN9520-AN9520 ANT1
 U 1 1 5F783087
 P 8900 2650
 F 0 "ANT1" H 9030 2746 50  0000 L CNN
@@ -1152,4 +1141,10 @@ Text Notes 10600 7650 0    50   ~ 0
 1
 Text Notes 8150 7650 0    50   ~ 0
 8 Aug 2020
+Text GLabel 7750 1800 2    50   Input ~ 0
+3v3A
+Wire Wire Line
+	7500 1800 7750 1800
+Text GLabel 4700 800  1    50   Input ~ 0
+3v3A
 $EndSCHEMATC
